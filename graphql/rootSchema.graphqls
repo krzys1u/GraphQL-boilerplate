@@ -1,0 +1,26 @@
+scalar JSON
+
+type Response{
+    status: String
+    data: Int
+}
+
+type ApiInfo {
+    version: String!
+}
+
+#Application Root
+type ApplicationQuery {
+    example: Example
+    example2: Example2
+}
+
+type ApplicationMutation {
+    example: ExampleMutation
+    example2: Example2Mutation
+}
+
+schema {
+    query: ApplicationQuery
+    mutation: ApplicationMutation
+}

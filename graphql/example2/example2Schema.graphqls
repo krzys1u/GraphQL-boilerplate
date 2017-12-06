@@ -1,0 +1,9 @@
+
+type Example2Data{
+    example2_subfield(data: Int): Response
+
+}
+
+type Example2Mutation{
+    example2_set(data: Int): Response
+}
