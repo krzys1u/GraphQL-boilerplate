@@ -50,9 +50,9 @@ class GraphQlApplication{
         this.app.set('port', this.config.port); //@todo add port get from start process parameters
         //@todo add logger - morgan
 
-        this.applyMiddlewares();
-
         this.registerCommonHandlers();
+
+        this.applyMiddlewares();
 
         this.initGraphQl();
     }
